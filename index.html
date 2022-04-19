@@ -11,7 +11,7 @@
     <script src="libs/panelset/panelset.js"></script>
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xcc7a7439f654381b9986506ce3bb418","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xdc08686feef43a7bc0ad51f00616d99","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -44,16 +44,11 @@ layout: true
   
 &lt;div class="my-footer"&gt;
 &lt;span&gt;
-&lt;a href="https://retaoliveira.github.io/places" target="_blank"&gt;https://retaoliveira.github.io/places&lt;/a&gt;
+&lt;a href="https://places.education" target="_blank"&gt;https://places.education&lt;/a&gt;
 &lt;/span&gt;
 &lt;/div&gt; 
 
 ---
-
-
-
-
-
 
 
 
@@ -118,14 +113,14 @@ starwars
 
 ```
 ## # A tibble: 87 x 14
-##   name  height  mass hair_color skin_color eye_color birth_year
-##   &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt;
-## 1 Luke~    172    77 blond      fair       blue            19  
-## 2 C-3PO    167    75 &lt;NA&gt;       gold       yellow         112  
-## 3 R2-D2     96    32 &lt;NA&gt;       white, bl~ red             33  
-## 4 Dart~    202   136 none       white      yellow          41.9
-## 5 Leia~    150    49 brown      light      brown           19  
-## 6 Owen~    178   120 brown, gr~ light      blue            52  
+##   name    height  mass hair_color skin_color eye_color birth_year
+##   &lt;chr&gt;    &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt;
+## 1 Luke S~    172    77 blond      fair       blue            19  
+## 2 C-3PO      167    75 &lt;NA&gt;       gold       yellow         112  
+## 3 R2-D2       96    32 &lt;NA&gt;       white, bl~ red             33  
+## 4 Darth ~    202   136 none       white      yellow          41.9
+## 5 Leia O~    150    49 brown      light      brown           19  
+## 6 Owen L~    178   120 brown, gr~ light      blue            52  
 ## # ... with 81 more rows, and 7 more variables: sex &lt;chr&gt;,
 ## #   gender &lt;chr&gt;, homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,
 ## #   vehicles &lt;list&gt;, starships &lt;list&gt;
@@ -149,20 +144,20 @@ glimpse(starwars)
 ```
 ## Rows: 87
 ## Columns: 14
-## $ name       &lt;chr&gt; "Luke Skywalker", "C-3PO", "R2-D2", "Dart...
-## $ height     &lt;int&gt; 172, 167, 96, 202, 150, 178, 165, 97, 183...
-## $ mass       &lt;dbl&gt; 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75....
-## $ hair_color &lt;chr&gt; "blond", NA, NA, "none", "brown", "brown,...
-## $ skin_color &lt;chr&gt; "fair", "gold", "white, blue", "white", "...
-## $ eye_color  &lt;chr&gt; "blue", "yellow", "red", "yellow", "brown...
-## $ birth_year &lt;dbl&gt; 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0...
-## $ sex        &lt;chr&gt; "male", "none", "none", "male", "female",...
-## $ gender     &lt;chr&gt; "masculine", "masculine", "masculine", "m...
-## $ homeworld  &lt;chr&gt; "Tatooine", "Tatooine", "Naboo", "Tatooin...
-## $ species    &lt;chr&gt; "Human", "Droid", "Droid", "Human", "Huma...
-## $ films      &lt;list&gt; [&lt;"The Empire Strikes Back", "Revenge of...
-## $ vehicles   &lt;list&gt; [&lt;"Snowspeeder", "Imperial Speeder Bike"...
-## $ starships  &lt;list&gt; [&lt;"X-wing", "Imperial shuttle"&gt;, &lt;&gt;, &lt;&gt;,...
+## $ name       &lt;chr&gt; "Luke Skywalker", "C-3PO", "R2-D2", "Darth V~
+## $ height     &lt;int&gt; 172, 167, 96, 202, 150, 178, 165, 97, 183, 1~
+## $ mass       &lt;dbl&gt; 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75.0, ~
+## $ hair_color &lt;chr&gt; "blond", NA, NA, "none", "brown", "brown, gr~
+## $ skin_color &lt;chr&gt; "fair", "gold", "white, blue", "white", "lig~
+## $ eye_color  &lt;chr&gt; "blue", "yellow", "red", "yellow", "brown", ~
+## $ birth_year &lt;dbl&gt; 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0, N~
+## $ sex        &lt;chr&gt; "male", "none", "none", "male", "female", "m~
+## $ gender     &lt;chr&gt; "masculine", "masculine", "masculine", "masc~
+## $ homeworld  &lt;chr&gt; "Tatooine", "Tatooine", "Naboo", "Tatooine",~
+## $ species    &lt;chr&gt; "Human", "Droid", "Droid", "Human", "Human",~
+## $ films      &lt;list&gt; &lt;"The Empire Strikes Back", "Revenge of the~
+## $ vehicles   &lt;list&gt; &lt;"Snowspeeder", "Imperial Speeder Bike"&gt;, &lt;~
+## $ starships  &lt;list&gt; &lt;"X-wing", "Imperial shuttle"&gt;, &lt;&gt;, &lt;&gt;, "TI~
 ```
 
 ---
@@ -242,7 +237,7 @@ Quem é o personagem não tão alto mas realmente rechonchudo?
 ]
 --
 
-&lt;img src="index_files/figure-html/unnamed-chunk-9-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-8-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -454,7 +449,7 @@ quartet %&gt;%
 ```
 ## # A tibble: 4 x 6
 ##   set   mean_x mean_y  sd_x  sd_y     r
-## * &lt;fct&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##   &lt;fct&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 ## 1 I          9   7.50  3.32  2.03 0.816
 ## 2 II         9   7.50  3.32  2.03 0.816
 ## 3 III        9   7.5   3.32  2.03 0.816
@@ -475,7 +470,7 @@ quartet %&gt;%
 Você vê algo fora do comum?
 ]
 
-&lt;img src="index_files/figure-html/unnamed-chunk-16-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-15-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -485,7 +480,7 @@ Você vê algo fora do comum?
 Como as pessoas estão relatando valores mais baixos versus valores mais altos de visitas da FB?
 ]
 
-&lt;img src="index_files/figure-html/unnamed-chunk-17-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-16-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: middle
@@ -526,20 +521,27 @@ Medidas para espécies de pinguins, ilha no Arquipélago de Palmer, tamanho (com
 
 ```r
 library(palmerpenguins)
+```
+
+```
+## Warning: package 'palmerpenguins' was built under R version 4.1.3
+```
+
+```r
 glimpse(penguins)
 ```
 
 ```
 ## Rows: 344
 ## Columns: 8
-## $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Ad...
-## $ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, T...
-## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, ...
-## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, ...
-## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, ...
-## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, ...
-## $ sex               &lt;fct&gt; male, female, female, NA, female, ...
-## $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007...
+## $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adeli~
+## $ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torg~
+## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.~
+## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.~
+## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195~
+## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 362~
+## $ sex               &lt;fct&gt; male, female, female, NA, female, mal~
+## $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2~
 ```
 ]
 
@@ -547,7 +549,7 @@ glimpse(penguins)
 
 .panelset[
 .panel[.panel-name[Plot]
-&lt;img src="index_files/figure-html/unnamed-chunk-22-1.png" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" /&gt;
 ]
 .panel[.panel-name[Código]
 
@@ -588,7 +590,7 @@ class: middle
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-23-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-22-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -606,7 +608,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-24-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-23-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -626,7 +628,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-24-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -648,7 +650,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -672,7 +674,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -698,7 +700,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -726,7 +728,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-29-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -756,7 +758,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-30-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-29-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -788,7 +790,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-31-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-30-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -822,7 +824,7 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-32-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-31-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -858,14 +860,14 @@ ggplot(data = penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-33-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-32-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
 
 .panelset[
 .panel[.panel-name[Plot]
-&lt;img src="index_files/figure-html/unnamed-chunk-34-1.png" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-33-1.png" width="70%" style="display: block; margin: auto;" /&gt;
 ]
 .panel[.panel-name[Code]
 
@@ -969,7 +971,7 @@ ggplot(penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-35-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-34-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -991,7 +993,7 @@ ggplot(penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-36-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-35-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -1013,7 +1015,7 @@ ggplot(penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-37-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-36-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -1034,7 +1036,7 @@ ggplot(penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-38-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-37-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -1056,7 +1058,7 @@ ggplot(penguins,
 ```
 ]
 .pull-right[
-&lt;img src="index_files/figure-html/unnamed-chunk-39-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-38-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -1074,7 +1076,7 @@ ggplot(penguins,
   geom_point()
 ```
 
-&lt;img src="index_files/figure-html/unnamed-chunk-40-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-39-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 .pull-right[
 **Setting**
@@ -1087,7 +1089,7 @@ ggplot(penguins,
 * geom_point(size = 2, alpha = 0.5)
 ```
 
-&lt;img src="index_files/figure-html/unnamed-chunk-41-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-40-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -1117,7 +1119,7 @@ class: middle
 
 .panelset[
 .panel[.panel-name[Plot]
-&lt;img src="index_files/figure-html/unnamed-chunk-42-1.png" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-41-1.png" width="70%" style="display: block; margin: auto;" /&gt;
 ]
 .panel[.panel-name[Código]
 
@@ -1153,7 +1155,7 @@ ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
 * facet_grid(species ~ sex)
 ```
 
-&lt;img src="index_files/figure-html/unnamed-chunk-43-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-42-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -1164,7 +1166,7 @@ ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
 * facet_grid(sex ~ species)
 ```
 
-&lt;img src="index_files/figure-html/unnamed-chunk-44-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-43-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -1175,7 +1177,7 @@ ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
 * facet_wrap(~ species)
 ```
 
-&lt;img src="index_files/figure-html/unnamed-chunk-45-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-44-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -1186,7 +1188,7 @@ ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
 * facet_grid(. ~ species)
 ```
 
-&lt;img src="index_files/figure-html/unnamed-chunk-46-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-45-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -1197,7 +1199,7 @@ ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
 * facet_wrap(~ species, ncol = 2)
 ```
 
-&lt;img src="index_files/figure-html/unnamed-chunk-47-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-46-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -1227,7 +1229,7 @@ ggplot(
 ```
 ]
 .pull-right-wide[
-&lt;img src="index_files/figure-html/unnamed-chunk-48-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-47-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -1249,7 +1251,7 @@ ggplot(
 ```
 ]
 .pull-right-wide[
-&lt;img src="index_files/figure-html/unnamed-chunk-49-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-48-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 

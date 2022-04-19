@@ -1,9 +1,8 @@
 ---
-title: "Visualizando - ggplot2"
-subtitle: "Encontros Síncronos 04 e 05"
+title: "Manipulando e visualizando dados"
 author: 
   - <br></br>Renata Oliveira
-date: '02/02/2021 e 09/02/2021'
+
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -26,6 +25,9 @@ output:
 
 ```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
+library(Tmisc)
+library(emo)
+library(dsbox)
 
 ```
 
@@ -35,11 +37,6 @@ xaringanExtra::use_tile_view()
 
 ```{r xaringan-editable, echo=FALSE}
 xaringanExtra::use_editable(expires = 1)
-```
-
-```{r xaringan-panelset, echo=FALSE, message=FALSE, warning=FALSE}
-xaringanExtra::use_panelset()
-xaringanExtra::style_panelset_tabs(panel_tab_font_family = "sans-serif")
 ```
 
 ```{r xaringanExtra-clipboard, echo=FALSE}
@@ -64,17 +61,6 @@ xaringanExtra::use_extra_styles(
 )
 ```
 
-```{r, load_refs, include=FALSE, cache=FALSE}
-library(RefManageR)
-BibOptions(check.entries = FALSE,
-           bib.style = "authoryear",
-           cite.style = "alphabetic",
-           style = "markdown",
-           hyperlink = FALSE,
-           dashed = FALSE)
-myBib <- ReadBib("myBib.bib", check = FALSE)
-library(knitcitations)
-```
 
 class: center, middle
 

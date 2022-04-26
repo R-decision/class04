@@ -1,8 +1,7 @@
 ---
-title: "Manipulando e visualizando dados"
+title: "Visualizando dados"
 author: 
   - <br></br>Renata Oliveira
-
 output:
   xaringan::moon_reader:
     lib_dir: libs
